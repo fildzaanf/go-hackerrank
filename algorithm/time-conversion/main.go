@@ -26,10 +26,12 @@ func timeConversion(s string) string {
         if hh == "12" {
             return "00" + ":" + mm + ":" + ss
         } 
+
+     	return hh + ":" + mm + ":" + ss
     } else if format == "PM" {
         if hh == "12" {
             return "12" + ":" + mm + ":" + ss
-        }
+        }  
     }
     
     hourInt, _ := strconv.Atoi(hh)
